@@ -1,0 +1,17 @@
+{
+  "data": {
+    "id": 1,
+    "userInfos": {
+      "firstName": "Cyril",
+      "lastName": "Dovineau",
+      "age": 22
+    },
+    "todayScore": 0.90,
+    "keyData": {
+      "calorieCount": 2000,
+      "proteinCount": 100,
+      "carbohydrateCount": 350,
+      "lipidCount": 100
+    }
+  }
+}
