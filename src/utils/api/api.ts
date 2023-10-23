@@ -17,11 +17,11 @@ export class ApiErrors {
 export async function apiFetch(id: string, type?: Type, mockedApi = true) {
     let input = null
     if (mockedApi) {
-        input = type ? "/SportSee/user/" + id + "/" + type :
-        "/SportSee/user/" + id
+        input = type ? `/SportSee/user/${id}/${type}/${type}.json` :
+        `/SportSee/user/${id}/user.json`
     } else {
-        input = type ? `http://localhost:5173/user/${id}/${type}/${type}.json` :
-        `http://localhost:5173/user/${id}/user.json`
+        input = type ? `http://localhost:3000/user/${id}/${type}` :
+        `http://localhost:3000/user/${id}`
     }
     const response = await fetch(input, {
         headers: {
