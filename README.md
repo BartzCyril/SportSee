@@ -1,27 +1,15 @@
-# React + TypeScript + Vite
+# SportSee
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sujet
 
-Currently, two official plugins are available:
+Vous développez la nouvelle page profil utilisateur pour SportSee, une startup de coaching sportif en pleine expansion. 
+Charles, le Product Owner, fournit les maquettes et les User Stories à intégrer pour ce sprint. 
+Antoine, le Lead Developer, précise les aspects techniques : développement en React, utilisation de D3 ou Recharts pour les graphiques, focus sur la version desktop, backend NodeJS pour les appels HTTP avec données d'exemple, standardisation des données de l'API et encourage la documentation du projet. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Maquette
 
-## Expanding the ESLint configuration
+Maquette : https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?type=design&node-id=0-1&mode=design
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Site
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Site SportSee : https://bartzcyril.github.io/SportSee/1
