@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 91px;
+    background-color: #020203;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 30px;
+}
+
+header nav div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header nav a {
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+}
+
+.row {
+    display: flex;
+}
+
+main {
+    width: 100%;
+}
+
+.main-div {
+    max-width: 1126px;
+    margin: 68px auto 0 auto;
+}
+
+.main-div-items {
+    margin-top: 77px;
+    display: flex;
+    gap: 31px;
+}
+
+.barChart {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.barChartLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name h1 {
+    font-weight: 500;
+    font-size: 48px;
+    color: black;
+    line-height: 24px;
+}
+
+.name h1 span {
+    color: #FF0101
+}
+
+.name p {
+    margin-top: 41px;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+.radarChartPerformance {
+    max-width: 258px;
+    width: 17.916vw;
+    max-height: 263px;
+    height: 25.68vh;
+    background-color: #282D30;
+    box-shadow: 0 2px 4px 0 #00000005;
+    border-radius: 5px;
+}
+
+.radialBarChartScore {
+    max-width: 258px;
+    width: 17.916vw;
+    max-height: 263px;
+    height: 25.68vh;
+    background-color: #FBFBFB;
+    box-shadow: 0 2px 4px 0 #00000005;
+}
+
+.radialBarChartScore h2 {
+    position: absolute;
+    color: #20253A;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 24px;
+    z-index: 999;
+}
+
+.radialBarChartScore p {
+    position: absolute;
+    color: #282D30;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    border-radius: 100%;
+    background-color: white;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radialBarChartScore p span {
+    color: #74798C;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.lineChartAverageSessions {
+    max-width: 258px;
+    width: 17.916vw;
+    max-height: 263px;
+    height: 25.68vh;
+    background-color: #FF0000;
+    box-shadow: 0 2px 4px 0 #00000005;
+    position: relative;
+}
+
+.lineChartAverageSessions h2 {
+    position: absolute;
+    top: 29px;
+    left: 34px;
+    color: white;
+    opacity: 0.5;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.barChartActivity {
+    max-width: 835px;
+    width: 57.986vw;
+    max-height: 320px;
+    height: 31.25vh;
+    background-color: #FBFBFB;
+    box-shadow: 0 2px 4px 0 #00000005;
+}
+
+.formatterLegend {
+    color: #74798C;
+}
+
+.recharts-surface {
+    margin-right: 8px !important;
+}
+
+.formatterLegendGap{
+    margin-right: 32px !important;
+}
+
+.section-nutritional {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nutritionalItems {
+    max-width: 258px;
+    width: 17.918vw;
+    max-height: 124px;
+    height: 12.11vh;
+    box-shadow: 0 2px 4px 0 #00000005;
+    background-color: #FBFBFB;
+    padding: 12.40%;
+    display: flex;
+    flex-direction: row;
+    gap: 9.30%;
+    align-items: center;
+}
+
+.nutritionalItems img {
+    width: 60px;
+    height: 60px;
+}
+
+.nutritionalItems div p {
+    color: #282D30;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nutritionalItems div span {
+    color: #74798C;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+footer {
+    width: 117px;
+    height: calc(100vh - 91px);
+    background-color: #020203;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .footerNavItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: white;
+}
+
+footer p {
+    position: relative;
+    top: 5.76vh;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+}
+
+.error, .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bold;
+    font-size: 64px;
+    color: #FF0101;
+}
+
+@media screen and (max-width: 1300px) {
+    .main-div {
+        margin: 34px 53.5px 0 53.5px;
+    }
+
+    .nutritionalItems div p {
+        font-size: 18px;
+    }
+
+    .nutritionalItems div span {
+        font-size: 12px;
+    }
+    .radarChartPerformance .recharts-surface{
+        position: absolute;
+        top: calc(50% - 115px);
+        left: 50%;
+        transform: translate(-50%);
+        width: 230px;
+        height: 230px;
+        overflow: visible;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .radarChartPerformance .recharts-surface{
+        top: calc(50% - 75px);
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .radialBarChartScore p {
+        top: 27%;
+    }
+}
+
+
