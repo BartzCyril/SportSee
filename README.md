@@ -1,26 +1,59 @@
-# SportSee
+# SportSee — tableau de bord sportif
+
+> Page de profil d'une application de coaching sportif : graphiques d'activité, de sessions, de performance et de score, alimentés par une API Node.js.
+
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-22B5BF)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+
+**👉 Voir le site : [bartzcyril.github.io/SportSee/1](https://bartzcyril.github.io/SportSee/1)**
 
 ## Sujet
 
-Vous développez la nouvelle page profil utilisateur pour SportSee, une startup de coaching sportif en pleine expansion. 
-Charles, le Product Owner, fournit les maquettes et les User Stories à intégrer pour ce sprint. 
-Antoine, le Lead Developer, précise les aspects techniques : développement en React, utilisation de D3 ou Recharts pour les graphiques, focus sur la version desktop, backend NodeJS pour les appels HTTP avec données d'exemple, standardisation des données de l'API et encourage la documentation du projet.
+Projet de formation OpenClassrooms. SportSee, start-up de coaching sportif, veut une nouvelle page profil. Le Product Owner fournit maquettes et user stories ; le Lead Developer impose React, une bibliothèque de graphiques (D3 ou Recharts), une API Node.js fournie et la standardisation des données de l'API côté front.
+
+## Fonctionnalités
+
+- Message d'accueil personnalisé
+- **Activité quotidienne** : poids et calories brûlées (histogramme)
+- **Durée moyenne des sessions** par jour de la semaine (courbe)
+- **Performance** par type d'activité (radar)
+- **Score** de réalisation de l'objectif (jauge circulaire)
+- Cartes nutritionnelles : calories, protéines, glucides, lipides
+- États de chargement et d'erreur
 
 ## Compétences acquises
 
-Pendant ce projet de développement de la page profil utilisateur pour SportSee, j'ai acquis et mis en pratique plusieurs compétences clés :
+- **Data visualisation** avec Recharts : quatre types de graphiques, tooltips et axes personnalisés
+- **Appels HTTP** vers une API REST avec `fetch` et gestion des erreurs
+- **Standardisation des données** : une classe par ressource (`UserData`, `UserActivity`, `UserAverageSessions`, `UserPerformance`) qui transforme la réponse de l'API dans le format attendu par les composants
+- **Données mockées** : le front peut basculer entre l'API réelle et des fichiers JSON locaux, ce qui permet de développer sans back-end et de déployer une démo statique
+- **React + TypeScript** : composants typés, routage par identifiant d'utilisateur
+- **Docker** pour lancer l'API fournie
 
-- **Développement en React :** J'ai travaillé sur la mise en place de la page profil utilisateur en utilisant React, respectant ainsi les standards et les bonnes pratiques de développement.
+## Lancer le projet en local
 
-- **Intégration de graphiques Recharts :** J'ai implémenté des graphiques interactifs sur la page en utilisant les bibliothèques D3 ou Recharts, offrant ainsi une expérience utilisateur visuellement attrayante et informative.
+### API (dossier `back/`)
 
-- **Focus sur la version desktop :** J'ai centré mes efforts sur l'optimisation de l'expérience utilisateur pour la version desktop, en veillant à ce que la page profil soit fonctionnelle et esthétiquement agréable sur cet écran.
+```bash
+cd back
+yarn install
+yarn dev                 # http://localhost:3000
+# ou avec Docker :
+docker build -t sportsee-api . && docker run -p 3000:3000 sportsee-api
+```
 
-- **Backend NodeJS pour les appels HTTP :** J'ai travaillé avec le backend NodeJS pour effectuer des appels HTTP, récupérant des données d'exemple pour alimenter la page profil utilisateur.
+### Front (dossier `front/`)
 
-- **Standardisation des données de l'API :** J'ai contribué à la standardisation des données provenant de l'API, garantissant une intégration fluide avec la partie frontend de l'application.
+```bash
+cd front
+npm install
+npm run dev
+```
 
-- **Documentation du projet :** J'ai suivi les recommandations d'Antoine en documentant le projet de manière approfondie, assurant ainsi une compréhension claire du code et des fonctionnalités pour toute l'équipe de développement.
+Par défaut, le front lit les données mockées de `front/public/user/`. Pour utiliser l'API, passer `mockedApi` à `false` dans `front/src/utils/api/api.ts`.
 
 ## Site
 
