@@ -7,7 +7,7 @@
   "author": "tdimnet <thomas.dimnet@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^3.1.0"
   },
   "dependencies": {
     "cors": "^2.8.5",
