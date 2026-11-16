@@ -31,7 +31,6 @@ Projet de formation OpenClassrooms. SportSee, start-up de coaching sportif, veut
 - **Data visualisation** avec Recharts : quatre types de graphiques, tooltips et axes personnalisés
 - **Appels HTTP** vers une API REST avec `fetch` et gestion des erreurs
 - **Standardisation des données** : une classe par ressource (`UserData`, `UserActivity`, `UserAverageSessions`, `UserPerformance`) qui transforme la réponse de l'API dans le format attendu par les composants
-- **Données mockées** : le front peut basculer entre l'API réelle et des fichiers JSON locaux, ce qui permet de développer sans back-end et de déployer une démo statique
 - **React + TypeScript** : composants typés, routage par identifiant d'utilisateur
 - **Docker** pour lancer l'API fournie
 
