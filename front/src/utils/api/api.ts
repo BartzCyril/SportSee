@@ -14,14 +14,14 @@ export class ApiErrors {
 }
 
 
-export async function apiFetch(id: string, type?: Type, mockedApi = true) {
+export async function apiFetch(id: string, type?: Type, mockedApi = false) {
     let input = null
     if (mockedApi) {
         input = type ? `/SportSee/user/${id}/${type}/${type}.json` :
         `/SportSee/user/${id}/user.json`
     } else {
-        input = type ? `http://localhost:3000/user/${id}/${type}` :
-        `http://localhost:3000/user/${id}`
+        input = type ? `${import.meta.env.VITE_API_URL ?? ""}/user/${id}/${type}` :
+        `${import.meta.env.VITE_API_URL ?? ""}/user/${id}`
     }
     const response = await fetch(input, {
         headers: {
