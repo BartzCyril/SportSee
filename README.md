@@ -12,6 +12,8 @@
 
 **👉 Voir le site : [bartzcyril.github.io/SportSee/1](https://bartzcyril.github.io/SportSee/1)**
 
+**🎨 Voir la maquette : [Maquette Figma](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?type=design&node-id=0-1&mode=design)**
+
 ## Sujet
 
 Projet de formation OpenClassrooms. SportSee, start-up de coaching sportif, veut une nouvelle page profil. Le Product Owner fournit maquettes et user stories ; le Lead Developer impose React, une bibliothèque de graphiques (D3 ou Recharts), une API Node.js fournie et la standardisation des données de l'API côté front.
@@ -55,11 +57,3 @@ npm run dev
 ```
 
 Par défaut, le front lit les données mockées de `front/public/user/`. Pour utiliser l'API, passer `mockedApi` à `false` dans `front/src/utils/api/api.ts`.
-
-## Site
-
-[Page Profil Utilisateur SportSee](https://bartzcyril.github.io/SportSee/1)
-
-## Maquette
-
-[Maquette Figma](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?type=design&node-id=0-1&mode=design)
