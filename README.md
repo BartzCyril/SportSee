@@ -2,8 +2,6 @@
 
 > Page de profil d'une application de coaching sportif : graphiques d'activité, de sessions, de performance et de score, alimentés par une API Node.js.
 
-🔗 **Démo en ligne** : [https://sportsee.qota7916.odns.fr/SportSee/12](https://sportsee.qota7916.odns.fr/SportSee/12)
-
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Recharts](https://img.shields.io/badge/Recharts-22B5BF)
